@@ -7,7 +7,7 @@ import PackageDescription
 
 let version = "4.2.0"
 let checksumObjectBox = "7081ab867037de8fc58dfa8f18a0a87fd0a10cdeae66d580c78e086d9bec6156"
-let ObjectBoxGenerator = "003d51095ded2e025fbed2b8eebe516f8a65b73cd2120a9cd56e04988cc19a22"
+let checksumObjectBoxGenerator = "003d51095ded2e025fbed2b8eebe516f8a65b73cd2120a9cd56e04988cc19a22"
 
 let package = Package(
   name: "ObjectBox",
@@ -26,13 +26,13 @@ let package = Package(
       name: "ObjectBoxGenerator",
       url:
         "https://github.com/objectbox/objectbox-swift-spec-staging/releases/download/v4.0.2-rc2/ObjectBoxGenerator.artifactbundle.zip",
-      checksum: ObjectBoxGenerator
+      checksum: checksumObjectBoxGenerator
     ),
     .binaryTarget(
       name: "ObjectBox.xcframework",
       url:
         "https://github.com/objectbox/objectbox-swift/releases/download/v4.2.0/ObjectBox-xcframework-4.2.0.zip",
-      checksum: checksum
+      checksum: checksumObjectBox
     ),
 
     /// MARK: - Plugin implementations
